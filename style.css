@@ -1,0 +1,37 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    gap: 20px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    flex: 0 1 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
