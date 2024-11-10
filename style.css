@@ -75,6 +75,14 @@ section > *, header > * {
 }
 
 .cards {
+    /* flex: 1 1 300px; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cards2 {
+    /* flex: 1 1 300px; */
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -103,7 +111,7 @@ section > *, header > * {
 
 .quote {
     flex: 1 1 auto;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     display: flex;
     justify-content: center;
     align-items: center;
