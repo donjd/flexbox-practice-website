@@ -10,19 +10,21 @@ body {
     /* padding-left: 10%;
     padding-right: 10%; */
     min-height: 100vh;
+    margin: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
+    color: orange;
+    background-color: #1f2937;
+
 }
 
-header, .welcome, footer {
+.welcome, footer {
     background-color: #1f2937;
     color: white;
-    margin: 
 }
 
 nav ul {
@@ -42,6 +44,22 @@ main {
 
 .welcome {
     flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-left {
+    flex: 1 2 200px;
+    margin-right: 50px;
+}
+
+.welcome-right {
+    background-color: white;
+    opacity: .5;
+    height: 200px;
+    flex: 1 0 200px;
+    margin-left: 0;
 }
 
 section > *, header > * {
@@ -51,15 +69,62 @@ section > *, header > * {
 
 .content {
     flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card .frame {
+    border: 2px solid rgb(90, 106, 250);
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100px;
+
+}
+
+.card p {
+    text-align: center;
+    font-size: 1rem;
 }
 
 .quote {
     flex: 1 1 auto;
     background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .call-to-action {
     display: flex;
+    background-color: rgb(90, 106, 250);
+    align-items: center;
+    color: white;
+    padding: 5px;
+}
+
+
+
+.call-to-action button {
+    border: 1px solid white;
+}
+
+.call-left {
+    line-height: 10px;
 }
 
 footer {
@@ -67,10 +132,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
+    letter-spacing: .25rem;
+    height: 50px;
 }
 
 a {
     text-decoration: none;
-    color:
+    color: inherit;
 }
-
+button {
+    background-color: rgb(90, 106, 250);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
